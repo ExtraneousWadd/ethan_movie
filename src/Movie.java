@@ -35,5 +35,16 @@ public class Movie {
         return userRating;
     }
 
+    public void getInfo(){
+        String str = "Title: " + title + "\n" + "Cast: ";
+        for(int i = 0; i < cast.length; i++){
+            str += cast[i] + "|";
+        }
+        str += "\n" + "Overview: " + overview + "\n";
+        str += "Runtime: " + runtime + "\n";
+        str += "User Ratings: " + userRating + "\n";
+        System.out.println(str);
+    }
+
 
 }
