@@ -5,7 +5,7 @@ public class Movie {
     private String overview;
     private int runtime;
     private double userRating;
-    public Movie(String title, String[] cast, String director, String overview, int runtime,int userRating){
+    public Movie(String title, String[] cast, String director, String overview, int runtime,double userRating){
         this.title = title;
         this.cast = cast;
         this.director = director;
@@ -43,7 +43,9 @@ public class Movie {
         str += "\n" + "Overview: " + overview + "\n";
         str += "Runtime: " + runtime + "\n";
         str += "User Ratings: " + userRating + "\n";
-        System.out.println(str);
+        str += "Directed by: "+ director;
+        System.out.println(str );
+
     }
 
 
