@@ -198,4 +198,5 @@ public class MovieCollection {
         results.get(choice-1).getInfo();
         menu();
     }
+
 }
